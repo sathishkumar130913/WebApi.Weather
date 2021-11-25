@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: WeatherApi-deployment
+  name: weatherapi-deployment
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: WeatherApi
+      app: weatherapi
   template:
     metadata:
       labels:
-        app: WeatherApi
+        app: weatherapi
     spec:
       containers:
-      - name: WeatherApi-container
-        image: gcr.io/dps-parent-project/WeatherApi:v1
+      - name: Weatherapi-container
+        image: gcr.io/dps-parent-project/weatherapi:devlopment
         imagePullPolicy: IfNotPresent
         resources:
           limits:
