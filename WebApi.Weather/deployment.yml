@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: weatherapi-container
-        image: gcr.io/dps-parent-project/weatherapi:devlopment
+        image: gcr.io/dps-parent-project/weatherapi:tagversion
         imagePullPolicy: IfNotPresent
         resources:
           limits:
