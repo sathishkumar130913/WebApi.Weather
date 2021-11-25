@@ -13,7 +13,7 @@ spec:
         app: weatherapi
     spec:
       containers:
-      - name: Weatherapi-container
+      - name: weatherapi-container
         image: gcr.io/dps-parent-project/weatherapi:devlopment
         imagePullPolicy: IfNotPresent
         resources:
