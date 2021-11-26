@@ -6,7 +6,7 @@ spec:
   selector:
     app: weatherapi
   ports:
-  - port: 5050
+  - port: 5051
     targetPort: 80
   type: LoadBalancer
 
