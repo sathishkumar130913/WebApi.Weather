@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: weatherapi-deployment
-  namespace: default
+  namespace: sat-k8s
 spec:
   selector:
     matchLabels:
@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: IfNotPresent
         resources:
           limits:
-            memory: "200Mi"
-            cpu: "700m"
+            memory: "100Mi"
+            cpu: "100m"
         ports:
         - containerPort: 80
