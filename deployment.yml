@@ -16,5 +16,5 @@ spec:
       - name: weatherapi-container
         image: gcr.io/dps-parent-project/weatherapi:tagversion
         imagePullPolicy: IfNotPresent
-      ports:
+        ports:
         - containerPort: 80
